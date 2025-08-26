@@ -32,10 +32,10 @@ int main() {
             result = value1 / value2;
             cout << "Resultado: " << result << endl;
         } else {
-            cout << "Error: División por cero no permitida." << endl;
+            cout << "Error: No se puede diividir por cero." << endl;
         }
     } else {
-        cout << "Operador no válido." << endl;
+        cout << "Operador no valido." << endl;
     }
     return 0;
 }
