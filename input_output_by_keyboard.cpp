@@ -6,11 +6,11 @@ int main() {
     int userAge;
 
     cout << "Please enter your name: ";    // salida de datos
-    cin >> userName;            // entrda de datos 
+    cin >> userName;            // entrada de datos 
 
     cout << "Hello " << userName << '\n';     // salida de datos con uso de variables
 
-    cout << "Please enter your last name: ";
+    cout << "Please enter your last name: ";   
     cin >> lastName;
 
     cout << "Your last name is: " << lastName << '\n';
