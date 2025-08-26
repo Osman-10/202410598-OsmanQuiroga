@@ -6,7 +6,6 @@
 
 #include <iostream>
 using namespace std;
-
 int main() {
     int value1, value2, result;
     char operacion;
