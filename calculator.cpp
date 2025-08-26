@@ -1,3 +1,9 @@
+/*Simple calculator C++
+ author : Osman Quiroga
+ date: 2024-06-27
+*/ 
+
+
 #include <iostream>
 using namespace std;
 
