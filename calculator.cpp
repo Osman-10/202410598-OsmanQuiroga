@@ -1,6 +1,6 @@
 /*Simple calculator C++
  author : Osman Quiroga
- date: 2024-06-27
+ date: 2025-08-26
 */ 
 
 
