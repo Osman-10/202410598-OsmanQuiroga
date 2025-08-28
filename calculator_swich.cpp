@@ -33,7 +33,7 @@ int main() {
                 result = value1 / value2;
                 cout << "El resultado es: " << result << endl;
             } else {
-                cout << "Error: No se puede diividir por cero." << endl;
+                cout << "Error: No se puede dividir por cero." << endl;
             }
             break;
         case '%': 
@@ -41,7 +41,7 @@ int main() {
                 result = value1 % value2;
                 cout << "El resultado es: " << result << endl;                                                                                                                            
             } else {
-                cout << "Error: No se puede diividir por cero." << endl;
+                cout << "Error: No se puede dividir por cero." << endl;
             }
             break;
 
