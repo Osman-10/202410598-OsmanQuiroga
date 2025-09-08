@@ -2,7 +2,7 @@
 using namespace std;
 
 int square(int number) { 
-    cout << "Ingresa un número: ";
+    cout << "Ingresa un numero: ";
     cin >> number;  
     cout << "El cuadrado de " << number << " es: " << number * number << endl;
     return number * number;
@@ -13,7 +13,7 @@ int main() {
 
     cout << "Ingrese el primer numero: ";
     cin >> value1;
-    cout << "Ingrese el operador (+, -, *, /, %): ";
+    cout << "Ingrese el operador (+, -, *): ";
     cin >> operacion;
     cout << "Ingrese el segundo numero: ";
     cin >> value2;
