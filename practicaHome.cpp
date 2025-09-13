@@ -14,11 +14,9 @@ int main(){
         cout << "no me gustas"<< endl;
     }
     else
-        result = valorOne + valorTwo;
     {
+        result = valorOne + valorTwo;
         cout << "la suma de " << valorOne << " + " << valorTwo << " es = " << result << endl;
-    }
-
-         
+    } 
 return 0;
 }

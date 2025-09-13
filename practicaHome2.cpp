@@ -12,15 +12,15 @@ int main() {
     {
     case 1:
         result = value1 + value2;
-        cout << "el resultado es "<< result << endl;
+        cout << "el resultado es: "<< result << endl;
         break;
     case 2:
         result = value1 - value2;
-        cout << "el resultado es" << result << endl;
+        cout << "el resultado es: " << result << endl;
         break;
     case 3:
         result = value1 * value2;
-        cout << "el resultado es" << result << endl;
+        cout << "el resultado es: " << result << endl;
         break;
     case 4:
         result = value1 / value2;
