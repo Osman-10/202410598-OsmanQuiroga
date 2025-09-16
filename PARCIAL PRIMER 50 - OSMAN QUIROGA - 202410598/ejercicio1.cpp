@@ -1,14 +1,4 @@
- /*Ejercicio 1 – función con 1 parámetro y void
-En la fábrica, una máquina corta hojas de papel en paquetes.
-● Si la cantidad de paquetes (n) es par, mostrar los números de serie de los paquetes
-pares hasta n.
-● Si la cantidad de paquetes es impar, mostrar los números de serie de los paquetes
-impares hasta n.
-Ejemplo 1:
-Entrada → n = 8
-Salida → Paquetes revisados: 2 4 6 8
 
-*/
 #include <iostream>
 using namespace std;
     void showEvenNumbers(int n){
