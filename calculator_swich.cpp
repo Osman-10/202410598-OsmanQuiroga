@@ -16,7 +16,7 @@ int main() {
     cin >> value2;
 
     switch (operacion) {
-        case '+':
+        case 't':
             result = value1 + value2;
             cout << "El resultado es: " << result << endl;
             break;

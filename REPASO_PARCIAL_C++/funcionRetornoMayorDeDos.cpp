@@ -24,7 +24,6 @@ int main() {
     cout << "Ingrese dos numeros para saber cual es mayor: ";
     cin >> firstNumber;
     cin >> secondNumber;
-
     mayor(firstNumber, secondNumber);
     return 0;
 }
