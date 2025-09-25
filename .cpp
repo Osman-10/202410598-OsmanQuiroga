@@ -1,21 +1,29 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
-int main (){
-    int inputValue1, inputValue2;
-    int sum, rest, mult, div, mod;
-    cout << "enter two integer values: ";
-    cin >> inputValue1;
-    cin >> inputValue2;
 
-    sum = inputValue1 + inputValue2;
-    rest = inputValue1 - inputValue2;
-    mult = inputValue1 * inputValue2;
-    div = (inputValue2 != 0) ? (inputValue1 / inputValue2) : 0;
-    mod = (inputValue2 != 0) ? (inputValue1 % inputValue2) : 0;
+bool esPalindromo(string palabra) {
+    for (int i = 0; i < palabra.size() / 2; i++) {
+        if (palabra[i] != palabra[palabra.size() - 1 - i]) {
+            return false; // si alguna letra no coincide
+        }
+    }
+    return true;
+}
 
-    cout << "Sum: " << sum << endl;
-    cout << "Difference: " << rest << endl;
-    cout << "Product: " << mult << endl;
-    cout << "Quotient: " << div << endl;
-    cout << "Remainder: " << mod << endl;
+int main() {
+    string word1, word2;
+    cout << "Ingrese dos palabras para saber si son palindromas: " << endl;
+    cin >> word1 >> word2;
+
+    if (esPalindromo(word1))
+        cout << word1 << " es palindroma." << endl;
+    else
+        cout << word1 << " no es palindroma." << endl;
+
+    if (esPalindromo(word2))
+        cout << word2 << " es palindroma." << endl;
+    else
+        cout << word2 << " no es palindroma." << endl;
+
+    return 0;
 }

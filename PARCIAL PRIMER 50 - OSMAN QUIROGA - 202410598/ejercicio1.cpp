@@ -8,7 +8,8 @@ using namespace std;
         }
         
     }
-    void showOddNumbers(int n){
+    void showOddNumbers(int n)
+    {
         for (int i = 1; i <= n; i+=2)
         {
             cout << "Paquetes revisados: " << i << endl;
@@ -16,16 +17,16 @@ using namespace std;
         
     }
     int main(){
-        int n;
+        int nn;
         cout <<"ingresa la cantidad de paquetes: " << endl;
-        cin >> n;
-        if (n % 2 == 0)
+        cin >> nn;
+        if (nn % 2 == 0)
         {
-            showEvenNumbers(n);
+            showEvenNumbers(nn);
         }
         else
         {
-            showOddNumbers(n);
+            showOddNumbers(nn);
         }
         
         return 0;

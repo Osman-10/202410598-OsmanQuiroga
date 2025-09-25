@@ -10,7 +10,7 @@ void printInvoice(string plate, int hours, int rate) {
 int main() {
     string plate;
     int hours, rate;
-    cout << "Ingrese la placa del vehIculo: " << endl ;
+    cout << "Ingrese la placa del vehiculo: " << endl ;
     cin >> plate;
     cout << "Ingrese las horas de parqueo: " << endl;
     cin >> hours;

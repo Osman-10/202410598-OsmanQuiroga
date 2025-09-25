@@ -1,10 +1,18 @@
 #include <iostream>
-
 using namespace std;
+
 int main() {
-    string userName = " Osman";
-    int userAge = 19;
-    cout << "Hello" << userName << '\n';
-    cout << "your age is: " << userAge << '\n';
-    return 0;    
+    string name;
+    cout << "Ingrese su nombre: ";
+    cin >> name;
+
+    bool esMayor = name.size() >= 10;
+
+    if (esMayor) {
+        cout << "Tu nombre tiene mas de 10 characteres " << endl;
+    } else {
+        cout << "Tu nombre tiene menos de 10 characteres" << endl;
+    }
+
+    return 0;
 }

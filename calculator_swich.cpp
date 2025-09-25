@@ -6,17 +6,17 @@
 using namespace std;
 int main() {
     int value1, value2, result;
-    char operacion;
+    int operacion;
 
     cout << "Ingrese el primer numero: ";
     cin >> value1;
-    cout << "Ingrese el operador (+, -, *, /, %): ";
+    cout << "Ingrese el operador (1, -, *, /, %): ";
     cin >> operacion;
     cout << "Ingrese el segundo numero: ";
     cin >> value2;
 
     switch (operacion) {
-        case 't':
+        case 1:
             result = value1 + value2;
             cout << "El resultado es: " << result << endl;
             break;
