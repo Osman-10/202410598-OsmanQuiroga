@@ -41,3 +41,40 @@ int main(){
 
     return 0;
 }
+# include <iostream>
+using namespace std;
+bool esPalindromo(string texto)
+{
+    int inicio = 0;
+    int fin = texto.size() - 1;
+
+    while (inicio < fin)
+    {
+        if (texto[inicio] != texto[fin])
+        {
+            return false;
+        }
+        inicio++;
+        fin--;
+    }
+    return true;
+}
+void verificarPalindromo()
+{
+    string texto;
+    cout << "Ingrese un texto: ";
+    cin >> texto;
+    if (esPalindromo(texto))
+    {
+        cout << "Es un palíndromo";
+    }
+    else
+    {
+        cout << "No es un palíndromo";
+    }
+}
+int main()
+{
+    verificarPalindromo();
+    return 0;
+}

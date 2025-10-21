@@ -5,11 +5,11 @@ bool correctPassword(string posiblePassword) {
     string password1 = "1234";
     string password2 = "clave123";
 
-    if (posiblePassword == password1 || posiblePassword == password2) {
+    if (posiblePassword == password1 || posiblePassword == password2) 
+    {
         return true;
-    } else {
-        return false;
-    }
+    } 
+    return false;
 }
 
 int main() {

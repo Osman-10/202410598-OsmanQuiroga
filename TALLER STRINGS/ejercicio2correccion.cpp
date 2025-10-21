@@ -1,11 +1,29 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
+string removeSpaces(string word)
+{
+    string sinEspacios = "";
+    for (int i = 0; i < word.size(); i++)
+    {
+        if (word[i] != ' ')
+        {
+            sinEspacios += word[i];  
+        }
+        
+    }
+    return sinEspacios;
+    
+}
 
-void invertLetters(){
+void invertLetters()
+{
     string word;
-    cout << "ingrese una palabra: "<< endl;
-    cin >> word;
-    int rest32 = 'a' - 'A';
+    cout << "Ingrese una palabra o frase: " << endl;
+    getline(cin, word);
+    word = removeSpaces(word);
+
+    int rest32 = 'a' - 'A'; 
+
     for (int i = 0; i < word.size(); i++)
     {
         if (i % 2 == 0 && word[i] >= 'A' && word[i] <= 'Z')
@@ -15,15 +33,14 @@ void invertLetters(){
         else if (i % 2 != 0 && word[i] >= 'a' && word[i] <= 'z')
         {
             word[i] = word[i] - rest32;
-            
         }
-        
-        
     }
-    cout << word;
-    
+
+    cout << "Resultado: " << word << endl;
 }
-int main(){
+
+int main()
+{
     invertLetters();
     return 0;
 }
