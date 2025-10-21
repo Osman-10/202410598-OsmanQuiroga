@@ -2,9 +2,11 @@
 using namespace std;
 
 bool esPalindromo(string palabra) {
-    for (int i = 0; i < palabra.size() / 2; i++) {
-        if (palabra[i] != palabra[palabra.size() - 1 - i]) {
-            return false; // si alguna letra no coincide
+    for (int i = 0; i < palabra.size() / 2; i++) 
+    {
+        if (palabra[i] != palabra[palabra.size() - 1 - i]) 
+        {
+            return false; 
         }
     }
     return true;
@@ -16,14 +18,27 @@ int main() {
     cin >> word1 >> word2;
 
     if (esPalindromo(word1))
+    {
         cout << word1 << " es palindroma." << endl;
+    }
+        
     else
+    {
         cout << word1 << " no es palindroma." << endl;
+        
+    }
+        
 
     if (esPalindromo(word2))
-        cout << word2 << " es palindroma." << endl;
+    {
+        cout << word2 << " es palindroma." << endl;    
+    }
     else
+        
+    {
         cout << word2 << " no es palindroma." << endl;
+    }
+        
 
     return 0;
 }
