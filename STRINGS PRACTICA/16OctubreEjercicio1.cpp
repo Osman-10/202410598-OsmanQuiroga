@@ -1,54 +1,42 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
-bool longitudMinima(string pasword)
-{
-    if (pasword.length() < 8)
-    {
-        return false;
-    }
-    return true;
-}
-bool minChar(string pasword)
-{
-    int rest = '!' - '/';
 
+bool longitudMinima(string password)
+{
+    return password.length() >= 8;
 }
-    for (int i = 0; i < pasword.length(); i++)
+
+bool correctaPassword(string password)
+{
+    bool hasUpper = false;
+    bool hasLower = false;
+    bool hasDigit = false;
+    bool hasSpecial = false;
+
+    for (int i = 0; i < password.length(); i++)
     {
-        if (isupper(pasword[i]))
-        {
+        if (isupper(password[i]))
             hasUpper = true;
-        }
-        else if (islower(pasword[i]))
-        {
+        else if (islower(password[i]))
             hasLower = true;
-        }
+        else if (isdigit(password[i]))
+            hasDigit = true;
+        else if (password[i] >= 33 && password[i] <= 47) 
+            hasSpecial = true;
     }
-
-    if (hasUpper && hasdigit)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-
-    
+    return hasUpper && hasLower && hasDigit && hasSpecial && longitudMinima(password);
 }
-int main (){
-    string pasword;
-    cout << "ingrese una contrasena: " << endl;
-    cin >> pasword;
-    if (correctPasword(pasword))
-    {
-        cout << "contrasena segura ";
-    }
-    else
-    {
-        cout << "contrasena insegura ";
-    }
-    
-    return 0;
 
+int main()
+{
+    string password;
+    cout << "Ingrese una contraseña: ";
+    cin >> password;
+
+    if (correctaPassword(password))
+        cout << "Contraseña segura " << endl;
+    else
+        cout << "Contraseña insegura " << endl;
+
+    return 0;
 }
