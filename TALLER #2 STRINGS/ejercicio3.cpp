@@ -43,11 +43,11 @@ void analisisCode()
     cout << "ingrese el codigo: " << endl;
     cin >> codigoProducto;
 
-    int guiones = contarGuiones(codigoProducto);
-    cout << "El codigo tiene " << guiones << " guiones" << endl;
+    int scrips = contarGuiones(codigoProducto);
+    cout << "El codigo tiene " << scrips << " guiones" << endl;
 
-    int digitos = contarDigitos(codigoProducto);
-    cout << "El codigo tiene " << digitos << " digitos"  << endl;
+    int digits = contarDigitos(codigoProducto);
+    cout << "El codigo tiene " << digits << " digitos"  << endl;
   
     if (validarUltimaMayuscula(codigoProducto))
     {

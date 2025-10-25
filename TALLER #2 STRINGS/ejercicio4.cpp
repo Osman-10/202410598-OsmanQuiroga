@@ -33,7 +33,7 @@ bool terminaEnPunto(string frase)
     }
     return false;
 }
-void evaluarFrase()
+void eassessPhrase()
 {
     string frase;
     cout << "Ingrese una frase: " << endl;
@@ -57,6 +57,6 @@ void evaluarFrase()
 
 int main()
 {
-    evaluarFrase();
+    eassessPhrase();
     return 0;
 }

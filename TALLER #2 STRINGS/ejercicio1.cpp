@@ -37,7 +37,7 @@ bool validarSinEspacios(string nombreUsuario)
     return true;
 }
 
-void vericarUser()
+void verifyUser()
 {
     string nombreUser;
     cout << "ingrese un nombre de usuario: " << endl;
@@ -54,7 +54,7 @@ void vericarUser()
 }
 int main ()
 {
-     vericarUser();
-     return 0;
+    verifyUser();
+    return 0;
 
 }
