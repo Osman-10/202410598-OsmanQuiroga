@@ -41,7 +41,7 @@ void verifyUser()
 {
     string nombreUser;
     cout << "ingrese un nombre de usuario: " << endl;
-    getline (cin,nombreUser);  // use el getline para que tome los espacios en caso de que el usuario los ingrese, asi se puede validar correctamente que no tenga espacios.
+    getline (cin,nombreUser); 
     if (validarLongitud( nombreUser) && validarInicioLetra( nombreUser) && validarSinEspacios(nombreUser))
     {
         cout << "acceso concedido";
