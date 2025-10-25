@@ -1,4 +1,4 @@
-    
+
 # include <iostream>
 using namespace std;
 
@@ -49,7 +49,7 @@ void validateCodeAcces()
 
     if (tieneDigito(codigoAcceso) && tieneSimboloEspecial(codigoAcceso) && sinEspacios(codigoAcceso))
     {
-        cout << "Codigo de acceso valido" << endl;
+        cout  << "Codigo de acceso valido " << endl;
     }
     else
     {

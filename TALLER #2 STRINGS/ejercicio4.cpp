@@ -43,7 +43,7 @@ void eassessPhrase()
     cout << "La frase tiene " << words << " palabras " << endl;
 
     int points = contarPuntuacion(frase);
-    cout << "La frase tiene " << points << " signos de puntuación " << endl;
+    cout << "La frase tiene " << points << " signos de puntuacion " << endl;
 
     if (terminaEnPunto(frase))
     {
