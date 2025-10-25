@@ -27,7 +27,7 @@ bool validarSinEspacios(string nombreUsuario)
 {
     for (int i = 0; i < nombreUsuario.size(); i++)
     {
-        if (nombreUsuario[i] == ' ')
+        if (nombreUsuario[i] == 32)
         {
             return false;
             
