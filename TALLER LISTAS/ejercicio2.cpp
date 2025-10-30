@@ -1,7 +1,7 @@
 
 #include <iostream>
 using namespace std;
-void calculateAverageGrade()
+void calculateAverage()
 {
     float grades[9] = {3.8, 4.0, 2.2, 3.4, 4.9, 5.0, 3.4, 2.9, 1.0 };
     float sum = 0;
@@ -14,6 +14,6 @@ void calculateAverageGrade()
 }
 int main()
 {
-    calculateAverageGrade();
+    calculateAverage();
     return 0;
 }
