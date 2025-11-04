@@ -1,8 +1,4 @@
-/*Ejercicio 1: Contar caracteres de un texto (sin espacios)
-Crea un programa que reciba un string y cuente cuántos caracteres tiene, ignorando los espacios.
-Muestra el texto original, la cantidad total de caracteres y la cantidad sin espacios.
-Ejemplo:
-string palabra = "Programacion en C++";*/
+
 #include <iostream>
 using namespace std;
 void countChar()

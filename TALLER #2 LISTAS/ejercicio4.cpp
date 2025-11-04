@@ -1,9 +1,4 @@
-/*Ejercicio 4: Encontrar el precio más alto y el más bajo
-Crea un programa que recorra una lista de precios, calcule la suma total, y determine cuál es el precio
-más alto y el más bajo.
-Ejemplo:
-float precios[6] = {12.5, 8.0, 9.9, 15.3, 11.7, 6.4};
-*/
+
 #include <iostream>
 using namespace std;
 void findHighestAndLowestPrice()

@@ -1,8 +1,4 @@
-/*Ejercicio 2: Contar vocales y consonantes de un texto
-Crea un programa que recorra un string y determine cuántas vocales y cuántas consonantes tiene. El
-texto puede tener mayúsculas o minúsculas, pero deben contarse igual.
-Ejemplo:
-string texto = "Desarrollo de Software";*/
+
 #include <iostream>
 using namespace std;
 void countVowelsAndConsonants()
