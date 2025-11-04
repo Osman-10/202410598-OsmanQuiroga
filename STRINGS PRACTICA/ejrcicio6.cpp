@@ -17,14 +17,18 @@ int main() {
         cout << "Ingrese una palabra: ";
         getline(cin, palabra);
 
-        for (int i = 0; i < palabra.size(); i++) {
+        for (int i = 0; i < palabra.size(); i++) 
+        {
             bool repetida = false;
-            for (int j = 0; j < resultado.size(); j++) {
-                if (palabra[i] == resultado[j]) {
+            for (int j = 0; j < resultado.size(); j++) 
+            {
+                if (palabra[i] == resultado[j]) 
+                {
                     repetida = true;
                 }
             }
-            if (!repetida) {
+            if (!repetida) 
+            {
                 resultado += palabra[i];
             }
         }
@@ -33,7 +37,8 @@ int main() {
     }
 
     // --- EJERCICIO 2 ---
-    else if (opcion == 2) {
+        if (opcion == 2) 
+        {
         string a, b;
         cout << "Ingrese la primera palabra: ";
         getline(cin, a);
@@ -73,7 +78,8 @@ int main() {
 
         // arreglo para contar (26 letras)
         int contador[26];
-        for (int i = 0; i < 26; i++) {
+        for (int i = 0; i < 26; i++) 
+        {
             contador[i] = 0;
         }
 

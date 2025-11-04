@@ -5,16 +5,12 @@ int counterDigit(string cadena)
     int count = 0;
     for (int i = 0; i < cadena.size(); i++)
     {
-        if (cadena[i] >= 48 && cadena[i] <= 57)
+        if (cadena[i] >= '0' && cadena[i] <='9')
         {
-            count++;
-            
-        }
-        
+            count++;   
+        } 
     }
     return count;
-    
-
 }
 int main(){
     string fra;
@@ -22,6 +18,5 @@ int main(){
     getline(cin, fra);
     int count = counterDigit(fra);
     cout << "hay " << count << " numeros";
-    return 0;
-    
+    return 0;  
 }

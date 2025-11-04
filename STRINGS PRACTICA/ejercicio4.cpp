@@ -8,21 +8,17 @@ string removeSpaces(string cadena)
         if (cadena[i] != ' ')
         {
             result += cadena[i];
-         
-        }
-        
+        }   
     }
     return result;
-    
-
 }
-int main(){
-    string fra;
+int main()
+{
+    string frase;
     cout << "ingrese una frase" << endl;
-    getline(cin, fra);
+    getline(cin, frase);
     cout<< "nueva frase: " << endl;
-    fra = removeSpaces(fra);
-    cout << fra;
+    frase = removeSpaces(frase);
+    cout << frase;
     return 0;
-    
 }

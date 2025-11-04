@@ -10,18 +10,26 @@ string voltear(string frase)
 
     return frase_invertida;
 }
+void esPalindromo(string frase)
+{
+    cout << "Ingrese una frase: " << endl;
+    getline (cin, frase);
+    
+
+    string frase_invertida = voltear(frase);
+    if (frase == frase_invertida)
+    {
+        cout << "Es palindromo" << endl;
+    }
+    else
+    {
+        cout << "No es palindromo" << endl;
+    }
+}
 
 int main ()
 {
     string frase;
-    cout << "ingrese una frase" << endl;
-    getline(cin, frase); 
-    
-    cout << "frase volteada: " << endl;
-
-    string frase_volteada = voltear(frase);
-    
-    cout << frase_volteada << endl;
-    
+    esPalindromo(frase);
     return 0; 
 }

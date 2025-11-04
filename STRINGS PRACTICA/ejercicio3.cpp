@@ -7,14 +7,10 @@ int counterMayus(string cadena)
     {
         if (cadena[i] >= 65 && cadena[i] <= 90)
         {
-            count++;
-            
-        }
-        
+            count++; 
+        }   
     }
     return count;
-    
-
 }
 int counterMinus(string cadena)
 {
@@ -24,9 +20,7 @@ int counterMinus(string cadena)
         if (cadena[i] >= 97 && cadena[i] <= 122)
         {
             count++;
-            
-        }
-        
+        }  
     }
     return count;
 }
@@ -39,12 +33,9 @@ void nothing()
     cout << "hay " << count1 << " mayus" << endl;;
     int count2 = counterMinus(fra);
     cout << "hay " << count2 << " minus";
-
-
 }
     
 int main(){
     nothing();
-    return 0;
-    
+    return 0;  
 }
