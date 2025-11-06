@@ -16,13 +16,13 @@ int main() {
     cout << "\nMayores de edad:\n";
     for (int i = 0; i < 5; i++) {
         if (edades[i] >= 18)
-            cout << nombres[i] << " (" << edades[i] << " años)" << endl;
+            cout << nombres[i] << " tiene " << edades[i] << " anos " << endl;
     }
 
     cout << "\nMenores de edad:\n";
     for (int i = 0; i < 5; i++) {
         if (edades[i] < 18)
-            cout << nombres[i] << " (" << edades[i] << " años)" << endl;
+            cout << nombres[i] << " tiene " << edades[i] << " anos" << endl;
     }
 
     return 0;

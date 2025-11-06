@@ -2,9 +2,8 @@
 using namespace std;
 
 bool esPalindromo(string palabra) {
-    int n = palabra.length();
-    for (int i = 0; i < n / 2; i++) {
-        if (palabra[i] != palabra[n - 1 - i])
+    for (int i = 0; i < palabra.size() / 2; i++) {
+        if (palabra[i] != palabra[palabra.size() - 1 - i])
             return false;
     }
     return true;

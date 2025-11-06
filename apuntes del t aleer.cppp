@@ -1,0 +1,5 @@
+// Si ya hay memoria ocupada, la liberamos
+    /*if (names != 0) {
+        delete[] names;
+        delete[] values;
+    }*/

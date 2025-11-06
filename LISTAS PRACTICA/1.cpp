@@ -11,7 +11,7 @@ int main() {
     cout << "\nPrimera: " << frutas[0] << endl;
     cout << "Ultima: " << frutas[4] << endl;
 
-    frutas[4] = "Fresa"; // cambiar la segunda fruta
+    frutas[4] = "Fresa";
     cout << "\nNueva lista:\n";
     for (int i = 0; i < 5; i++)
         cout << frutas[i] << endl;
