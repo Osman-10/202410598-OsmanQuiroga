@@ -152,7 +152,8 @@ void calculateTotal() // calcula el total de todas las ventas
 void run() 
 {
     bool runningProgram = true;
-    while (runningProgram) {
+    while (runningProgram) 
+    {
         cout << "-- -- -- -- -- -- --  " << endl;
         cout << "Por favor seleccione: " << endl;
         cout << "1. Registrar o reiniciar las ventas" << endl;
