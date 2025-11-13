@@ -90,7 +90,8 @@ void findSale()  // permite buscar una venta por su nombre
         bool search = false;
         for (int i = 0; i < numberSales; i++) 
         {
-            if (namess[i] == searchName) {
+            if (namess[i] == searchName) 
+            {
                 cout << "venta encontrada en posicion " << i + 1 << " --->> valor: " << valuess[i] << endl;
                 search = true;
             }
