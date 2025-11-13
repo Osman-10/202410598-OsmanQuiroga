@@ -39,10 +39,10 @@ void printSales() // mostrar ventas registradas
         cout << endl;
         cout << "Lista actual de ventas:" << endl;
         cout << endl;
-    }
-    for (int i = 0; i < numberSales; i++) 
-    {
-        cout << "venta: " << namess[i] << " --->> valor: " << valuess[i] << endl;
+        for (int i = 0; i < numberSales; i++) 
+        {
+            cout << "venta: " << namess[i] << " --->> valor: " << valuess[i] << endl;
+        }
     }
 }
 void modifySale() // aca se modifica una venta existente
@@ -79,24 +79,26 @@ void findSale()  // permite buscar una venta por su nombre
     if (numberSales == 0  || namess == 0)   // if generico para chequear si hay ventas registradas
     {
         cout << "no hay ventas registradas " << endl;
-        return;
     }
-    string searchName;
-    cout << "ingrese el nombre de la venta que desea buscar: ";
-    cin.ignore();
-    getline(cin, searchName);
+    else
+    {
+        string searchName;
+        cout << "ingrese el nombre de la venta que desea buscar: ";
+        cin.ignore();
+        getline(cin, searchName);
 
-    bool found = false;
-    for (int i = 0; i < numberSales; i++) 
-    {
-        if (namess[i] == searchName) {
-            cout << "venta encontrada en posicion " << i + 1 << " --->> valor: " << valuess[i] << endl;
-            found = true;
+        bool found = false;
+        for (int i = 0; i < numberSales; i++) 
+        {
+            if (namess[i] == searchName) {
+                cout << "venta encontrada en posicion " << i + 1 << " --->> valor: " << valuess[i] << endl;
+                found = true;
+            }
         }
-    }
-    if (found == false) 
-    {
-        cout << "no se encontro esa venta  " << endl;
+        if (found == false) 
+        {
+            cout << "no se encontro esa venta  " << endl;
+        }
     }
 }
 void salesInRange() // permite mostrar las ventas dentro de un rango de precios
@@ -104,28 +106,31 @@ void salesInRange() // permite mostrar las ventas dentro de un rango de precios
     if (numberSales == 0 || namess == 0) // if generico para chequear si hay ventas registradas
     {
         cout << "no hay ventas registradas" << endl;
-        return;
     }
-    int min, max;
-    cout << "ingrese el valor minimo: ";
-    cin >> min;
-    cout << "ingrese el valor maximo: ";
-    cin >> max;
-
-    cout << "ventas entre " << min << " y " << max << ":" << endl;
-    bool found = false;
-
-    for (int i = 0; i < numberSales; i++) 
+    else
     {
-        if (valuess[i] >= min && valuess[i] <= max) 
+        int min, max;
+        cout << "ingrese el valor minimo: ";
+        cin >> min;
+        cout << "ingrese el valor maximo: ";
+        cin >> max;
+
+        cout << "ventas entre " << min << " y " << max << ":" << endl;
+        bool found = false;
+
+        for (int i = 0; i < numberSales; i++) 
         {
-            cout << namess[i] << " --->> " << valuess[i] << endl;
-            found = true;
+            if (valuess[i] >= min && valuess[i] <= max) 
+            {
+                cout << namess[i] << " --->> " << valuess[i] << endl;
+                found = true;
+            }
         }
-    }
-    if (found == false) 
-    {
-        cout << "no hay ventas en ese rango de precios  " << endl;
+        if (found == false) 
+        {
+            cout << "no hay ventas en ese rango de precios  " << endl;
+        }
+
     }
 }
 void calculateTotal() // calcula el total de todas las ventas
