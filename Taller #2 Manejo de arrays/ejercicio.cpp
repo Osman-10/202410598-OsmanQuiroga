@@ -21,9 +21,9 @@ void getNewSales() // perimite crear una nueva lista dinamica con nombres y valo
 
     for (int i = 0; i < numberSales; i++) // aca se piden los datos de las ventas
     { 
-        cout << "Ingrese el nombre de la venta #" << i + 1 << ": ";
+        cout << "Ingrese el nombre de la venta " << i + 1 << ": ";
         getline(cin, namess[i]); // uso de getline para permitir nombres con espacios
-        cout << "Ingrese el valor de la venta #" << i + 1 << ": ";
+        cout << "Ingrese el valor de la venta " << i + 1 << ": ";
         cin >> valuess[i];
         cin.ignore();
     }
