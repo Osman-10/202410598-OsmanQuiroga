@@ -58,16 +58,16 @@ void modifySale() // aca se modifica una venta existente
         cin.ignore();
         getline(cin, searchName);
     
-        bool found = false;
+        bool modify = false;
         for (int i = 0; i < numberSales; i++) 
         {
             if (namess[i] == searchName) 
             {
                 cout << "ingrese el nuevo valor para " << namess[i] << ": ";
                 cin >> valuess[i];
-                found = true;
+                modify = true;
             }
-            if (found == false) 
+            if (modify == false) 
             {
                 cout << "no hay una venta con ese nombre" << endl;
             }
@@ -87,15 +87,15 @@ void findSale()  // permite buscar una venta por su nombre
         cin.ignore();
         getline(cin, searchName);
 
-        bool found = false;
+        bool search = false;
         for (int i = 0; i < numberSales; i++) 
         {
             if (namess[i] == searchName) {
                 cout << "venta encontrada en posicion " << i + 1 << " --->> valor: " << valuess[i] << endl;
-                found = true;
+                search = true;
             }
         }
-        if (found == false) 
+        if (search == false) 
         {
             cout << "no se encontro esa venta  " << endl;
         }
@@ -116,17 +116,17 @@ void salesInRange() // permite mostrar las ventas dentro de un rango de precios
         cin >> max;
 
         cout << "ventas entre " << min << " y " << max << ":" << endl;
-        bool found = false;
+        bool show = false;
 
         for (int i = 0; i < numberSales; i++) 
         {
             if (valuess[i] >= min && valuess[i] <= max) 
             {
                 cout << namess[i] << " --->> " << valuess[i] << endl;
-                found = true;
+                show = true;
             }
         }
-        if (found == false) 
+        if (show == false) 
         {
             cout << "no hay ventas en ese rango de precios  " << endl;
         }
